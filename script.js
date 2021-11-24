@@ -3,12 +3,14 @@ const hamburger = document.getElementById('hamburger');
 const navUl = document.getElementById('nav-ul');
 
 hamburger.addEventListener('click', () => {
-    navUl.classList.toggle('show');
+  hamburger.classList.toggle('active');
+  navUl.classList.toggle('show');
 });
 
 // slider
 const slider = document.querySelector('.slider-container');
 const slides = Array.from(document.querySelectorAll('.slide'));
+const dots = Array.from(document.querySelectorAll('.dot'));
 
 let isDragging = false;
 let startPos = 0;
@@ -37,7 +39,7 @@ slides.forEach((slide, index) => {
   slide.addEventListener('mousedown', touchStart(index));
   slide.addEventListener('mouseup', touchEnd);
   slide.addEventListener('mouseleave', touchEnd);
-  slide.addEventListener('mousemoce', touchMove);
+  slide.addEventListener('mousemove', touchMove);
 })
 
 function touchStart(index) {
@@ -92,4 +94,14 @@ function setPositionByIndex() {
   currentTranslate = currentIndex * -window.innerWidth;
   prevTranslate = currentTranslate;
   setSliderPosition();
+  setDotActive();
+}
+
+function setDotActive() {
+  dots.forEach((dot, index) => {
+    dot.classList.remove('active');
+    if (currentIndex === index) {
+      dot.classList.add('active');
+    }
+  })
 }
