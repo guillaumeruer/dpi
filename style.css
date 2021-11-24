@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 :root {
     --primary: #39A2FF;
     --accent: #FFAA00;
@@ -13,11 +15,37 @@ html,
 body {
     height: 100%;
     width: 100%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     color: #4d4d4d;
 }
 
+body {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+section.add-margin {
+    margin: 0 3rem;
+}
+
+section:nth-child(even) {
+    background: var(--primary);
+    color: #fff;
+}
+
+section h1 {
+    padding: .5rem 0;
+}
 
 /* navigation styles start here */
 header {
@@ -26,9 +54,12 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .50);
+    height: 3rem;
 }
 
 nav {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,12 +138,13 @@ nav ul li a {
 /* slider style starts here */
 
 .slider-container {
-    height: 100vh;
+    height: calc(100vh - 2.5rem);
     display: inline-flex;
     overflow: hidden;
     transform: translateX(0);
     transition: transform .3s ease-out;
     cursor: grab;
+    scroll-snap-align: start;
 }
 
 .slide {
@@ -122,7 +154,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 1rem;
     user-select: none;
     transition: transform .3s ease-in-out;
 }
@@ -186,10 +218,9 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 100vw;
     padding: 1rem 8rem;
-    bottom: 0;
 }
 
 .dot {
@@ -198,6 +229,48 @@ nav ul li a {
     border-radius: .5rem;
     background: rgba(0, 0, 0, .20);
 }
+
 .dot.active {
     background: rgba(0, 0, 0, .6);
+}
+
+/* carousel style starts here */
+.carousel {
+    display: flex;
+    margin: 2rem;
+    width: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+    color: #fff;
+    background: #eee;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .20);
+}
+.card.purple {
+    background: #c093ff;
+}
+
+.card.darkblue {
+    background: #92b8ff;
+}
+
+.card.blue {
+    background: #58bdff;
+}
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: left;
+}
+
+.card img {
+    max-width: 100%;
 }
