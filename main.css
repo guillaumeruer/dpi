@@ -210,9 +210,11 @@ nav ul li a {
 }
 
 .logos-container img {
+    z-index: 2;
     width: 5rem;
     padding: .5rem;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .logos-container img.active {
