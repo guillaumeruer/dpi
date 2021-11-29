@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <title>DPI</title>
 </head>
@@ -13,7 +13,6 @@
 <body>
     <header>
         <nav>
-            <h1 class="logo">Logo</h1>
             <button class="hamburger" id="hamburger">
                 <div class="top"></div>
                 <div class="bottom"></div>
@@ -26,356 +25,345 @@
             </ul>
         </nav>
     </header>
-    <section class="primary">
-        <div class="swiper header-slider">
+
+    <section class="columns primary web">
+        <div class="section-title"></div>
+        <div class="section-content">
+            <div class="logos">
+                <img src="assets/img/dpi.svg" alt="DPI" class="dpi">
+                <div class="logos-container">
+                    <img src="assets/img/notes_de_frais.svg" alt="notes de frais" class="active">
+                    <img src="assets/img/interfaces.svg" alt="interfaces">
+                    <img src="assets/img/communication.svg" alt="communication">
+                    <img src="assets/img/management.svg" alt="management">
+                    <img src="assets/img/audit_expert.svg" alt="audit expert">
+                </div>
+            </div>
+            <div class="swiper slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="infos">
+                                <h1>Notre expertise en informatique</h1>
+                                <p>au service des <b>RH</b> pour propulser nos clients <b>(+400 PME, ETI et GE)</b> dans
+                                    un monde
+                                    où la technologie les affranchit des tâches inutiles et les accompagne vers le futur
+                                    auquel ils aspirent.</p>
+                                <a href="#" class="btn">je veux découvrir</a>
+                            </div>
+                            <div class="animation">
+                                <img src="assets/animations/header_1.gif" alt="animation">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="infos">
+                                <h1>Notre expertise en informatique</h1>
+                                <p>pour <b>réaliser vos interfaces</b> depuis ou vers vos systèmes d'information <b>RH
+                                        et comptable</b>
+                                    (Cegid, Oracle, People, Sage, SAP...) avec une <b>spécialisation ADP</b>.</p>
+                                <a href="#" class="btn">je veux découvrir</a>
+                            </div>
+                            <div class="animation">
+                                <img src="assets/animations/header_2.gif" alt="animation">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="infos">
+                                <h1>Quelle est l'image renvoyée par votre entreprise ?</h1>
+                                <p>Ensemble, nous pourrons créer le logo qui représente parfaitement <b>les valuers de
+                                        votre entreprise</b>,
+                                    concevoir une charte graphique puissante, élaborer une stratégie de communication
+                                    intelligente et audacieuse.
+                                    Vous aimez votre entreprise ? <b>Offrez-lui la meilleure image d'elle même.</b></p>
+                                <a href="#" class="btn">je veux découvrir</a>
+                            </div>
+                            <div class="animation">
+                                <img src="assets/animations/header_3.gif" alt="animation">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="infos">
+                                <h1>Maîtrisez-vous parfaitement la planification de vos projets ?</h1>
+                                <p>Philéas Gestion Management de projet est <b>l'outil par excellence</b> poru mener à
+                                    bien tous vos projets.
+                                    Son <b>moteur intelligent</b> calcule tous les scénarios possibles et vous suggère
+                                    <b>les meilleures combinaisons de tâches</b>
+                                    pour chaque acteur selon ses compétences et ses disponibilités
+                                </p>
+                                <a href="#" class="btn">je veux découvrir</a>
+                            </div>
+                            <div class="animation">
+                                <img src="assets/animations/header_4.gif" alt="animation">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="infos">
+                                <h1>Vos data valent de l'or</h1>
+                                <p><b>Philéas Gestion Audit Expert</b> est un pôle expert <b>en analyse et en
+                                        interprétation de données</b>.
+                                    Vous ne le réalisiez peut-être pas, mais rien qu'avec les données de son SIRH, votre
+                                    entreprise est assise sur <b>un trésor qui n'attend qu'à être exploité</b>.</p>
+                                <a href="#" class="btn">je veux découvrir</a>
+                            </div>
+                            <div class="animation">
+                                <img src="assets/animations/header_5.gif" alt="animation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="waves reverse"></div>
+    <section class="web">
+        <div class="section-title">
+            <h1>Découvrez nos solutions pour activer le processus d'excellence</h1>
+        </div>
+        <div class="section-content">
+            <div class="product-card columns">
+                <img src="assets/img/notes_de_frais.svg" alt="notes de frais" class="product-logo"></img>
+                <ul class="product-list">
+                    <li>
+                        <p>Système <b>OCR performant</b></p>
+                    </li>
+                    <li>
+                        <p>Équipes et infrastructure <b>100% made in France</b></p>
+                    </li>
+                    <li>
+                        <p><b>Valideur intelligent</b> qui arbitre les frais</p>
+                    </li>
+                    <li>
+                        <p><b>Interface sur-mesure</b> avec vos outils de comptabilité</p>
+                    </li>
+                </ul>
+                <img src="assets/animations/product_1.gif" alt="animation" class="product-animation">
+                <a href="#" class="btn">en savoir +</a>
+            </div>
+            <div class="product-card columns">
+                <img src="assets/img/interfaces.svg" alt="interfaces" class="product-logo"></img>
+                <ul class="product-list">
+                    <li>
+                        <p>Conception d'interfaces <b>sur-mesure</b></p>
+                    </li>
+                    <li>
+                        <p>Édition de <b>logiciels SAAS</b></p>
+                    </li>
+                    <li>
+                        <p>Conception de <b>logiciel sur-mesure</b></p>
+                    </li>
+                </ul>
+                <img src="assets/animations/product_2.gif" alt="animation" class="product-animation">
+                <a href="#" class="btn">en savoir +</a>
+            </div>
+            <div class="product-card columns">
+                <img src="assets/img/communication.svg" alt="communication" class="product-logo"></img>
+                <ul class="product-list">
+                    <li>
+                        <p>Nous créons votre logo qui représentera parfaitement les <b>valeurs de votre société</b>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Stratégies de <b>communication intelligentes et audacieuses</b></p>
+                    </li>
+                    <li>
+                        <p><b>Transparence et planification</b> de toutes les étapes de conception</p>
+                    </li>
+                </ul>
+                <img src="assets/animations/product_3.gif" alt="animation" class="product-animation">
+                <a href="#" class="btn">en savoir +</a>
+            </div>
+            <div class="product-card columns">
+                <img src="assets/img/management.svg" alt="management" class="product-logo"></img>
+                <ul class="product-list">
+                    <li>
+                        <p><b>Moteur intelligent</b> calculant tous les scénarios possibles pour suggèrer les
+                            <b>meilleures combinaisons de tâches</b>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Estime la charge de travail de vos projets</p>
+                    </li>
+                    <li>
+                        <p>Détermine le meilleur acteur pour chaque tâche</p>
+                    </li>
+                    <li>
+                        <p><b>Limite les coûts</b> et annonce au client une deadline réaliste</p>
+                    </li>
+                </ul>
+                <img src="assets/animations/product_4.gif" alt="animation" class="product-animation">
+                <a href="#" class="btn">en savoir +</a>
+            </div>
+            <div class="product-card columns">
+                <img src="assets/img/audit_expert.svg" alt="audit expert" class="product-logo"></img>
+                <ul class="product-list">
+                    <li>
+                        <p>Rapports précis et <b>approche scientifique</b></p>
+                    </li>
+                    <li>
+                        <p><b>Vérifie des hypothèses</b></p>
+                    </li>
+                    <li>
+                        <p>Décèle des exceptions</p>
+                    </li>
+                    <li>
+                        <p><b>Améliore l'efficacité</b> de vos processus et votre productivité</p>
+                    </li>
+                </ul>
+                <img src="assets/animations/product_5.gif" alt="animation" class="product-animation">
+                <a href="#" class="btn">en savoir +</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile" id="products">
+        <div class="swiper product-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="header-slide-content">
-                        <div class="text">
-                            <h1>Notre expertise en informatique</h1>
-                            <p>au service des <b>RH</b> pour propulser nos clients <b>(+400 PME, ETI et GE)</b> dans un monde
-                             où la technologie les affranchit des tâches inutiles et les accompagne vers le futur auquel ils aspirent.</p>
-                            <a href="#" class="btn">je veux découvrir</a>
-                        </div>
-                        <div class="animation">
-                            <img src="assets/animations/header_1.gif" alt="animation produit notes de frais">
-                        </div>
+                    <div class="product-card columns">
+                        <img src="assets/img/notes_de_frais.svg" alt="notes de frais" class="product-logo"></img>
+                        <ul class="product-list">
+                            <li>
+                                <p>Système <b>OCR performant</b></p>
+                            </li>
+                            <li>
+                                <p>Équipes et infrastructure <b>100% made in France</b></p>
+                            </li>
+                            <li>
+                                <p><b>Valideur intelligent</b> qui arbitre les frais</p>
+                            </li>
+                            <li>
+                                <p><b>Interface sur-mesure</b> avec vos outils de comptabilité</p>
+                            </li>
+                        </ul>
+                        <img src="assets/animations/product_1.gif" alt="animation" class="product-animation">
+                        <a href="#" class="btn">en savoir +</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="header-slide-content">
-                        <div class="text">
-                            <h1>Notre expertise en informatique</h1>
-                            <p>pour <b>réaliser vos interfaces</b> depuis ou vers vos systèmes d'information <b>RH et comptable</b>
-                            (Cegid, Oracle, People, Sage, SAP...) avec une <b>spécialisation ADP</b>.</p>
-                            <a href="#" class="btn">je veux découvrir</a>
-                        </div>
-                        <div class="animation">
-                            <img src="assets/animations/header_2.gif" alt="animation produit interfaces">
-                        </div>
+                    <div class="product-card columns">
+                        <img src="assets/img/interfaces.svg" alt="interfaces" class="product-logo"></img>
+                        <ul class="product-list">
+                            <li>
+                                <p>Conception d'interfaces <b>sur-mesure</b></p>
+                            </li>
+                            <li>
+                                <p>Édition de <b>logiciels SAAS</b></p>
+                            </li>
+                            <li>
+                                <p>Conception de <b>logiciel sur-mesure</b></p>
+                            </li>
+                        </ul>
+                        <img src="assets/animations/product_2.gif" alt="animation" class="product-animation">
+                        <a href="#" class="btn">en savoir +</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="header-slide-content">
-                        <div class="text">
-                            <h1>Quelle est l'image renvoyée par votre entreprise ?</h1>
-                            <p>Ensemble, nous pourrons créer le logo qui représente parfaitement <b>les valuers de votre entreprise</b>,
-                             concevoir une charte graphique puissante, élaborer une stratégie de communication intelligente et audacieuse.
-                            Vous aimez votre entreprise ? <b>Offrez-lui la meilleure image d'elle même.</b></p>
-                            <a href="#" class="btn">je veux découvrir</a>
-                        </div>
-                        <div class="animation">
-                            <img src="assets/animations/header_3.gif" alt="animation produit communication">
-                        </div>
+                    <div class="product-card columns">
+                        <img src="assets/img/communication.svg" alt="communication" class="product-logo"></img>
+                        <ul class="product-list">
+                            <li>
+                                <p>Nous créons votre logo qui représentera parfaitement les <b>valeurs de votre
+                                        société</b>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Stratégies de <b>communication intelligentes et audacieuses</b></p>
+                            </li>
+                            <li>
+                                <p><b>Transparence et planification</b> de toutes les étapes de conception</p>
+                            </li>
+                        </ul>
+                        <img src="assets/animations/product_3.gif" alt="animation" class="product-animation">
+                        <a href="#" class="btn">en savoir +</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="header-slide-content">
-                        <div class="text">
-                            <h1>Maîtrisez-vous parfaitement la planification de vos projets ?</h1>
-                            <p>Philéas Gestion Management de projet est <b>l'outil par excellence</b> poru mener à bien tous vos projets.
-                             Son <b>moteur intelligent</b> calcule tous les scénarios possibles et vous suggère <b>les meilleures combinaisons de tâches</b>
-                             pour chaque acteur selon ses compétences et ses disponibilités</p>
-                            <a href="#" class="btn">je veux découvrir</a>
-                        </div>
-                        <div class="animation">
-                            <img src="assets/animations/header_4.gif" alt="animation produit management">
-                        </div>
+                    <div class="product-card columns">
+                        <img src="assets/img/management.svg" alt="management" class="product-logo"></img>
+                        <ul class="product-list">
+                            <li>
+                                <p><b>Moteur intelligent</b> calculant tous les scénarios possibles pour suggèrer les
+                                    <b>meilleures combinaisons de tâches</b>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Estime la charge de travail de vos projets</p>
+                            </li>
+                            <li>
+                                <p>Détermine le meilleur acteur pour chaque tâche</p>
+                            </li>
+                            <li>
+                                <p><b>Limite les coûts</b> et annonce au client une deadline réaliste</p>
+                            </li>
+                        </ul>
+                        <img src="assets/animations/product_4.gif" alt="animation" class="product-animation">
+                        <a href="#" class="btn">en savoir +</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="header-slide-content">
-                        <div class="text">
-                            <h1>Vos data valent de l'or</h1>
-                            <p><b>Philéas Gestion Audit Expert</b> est un pôle expert <b>en analyse et en interprétation de données</b>.
-                             Vous ne le réalisiez peut-être pas, mais rien qu'avec les données de son SIRH, votre entreprise est assise sur <b>un trésor qui n'attend qu'à être exploité</b>.</p>
-                            <a href="#" class="btn">je veux découvrir</a>
-                        </div>
-                        <div class="animation">
-                            <img src="assets/animations/header_5.gif" alt="animation produit audit expert">
-                        </div>
+                    <div class="product-card columns">
+                        <img src="assets/img/audit_expert.svg" alt="audit expert" class="product-logo"></img>
+                        <ul class="product-list">
+                            <li>
+                                <p>Rapports précis et <b>approche scientifique</b></p>
+                            </li>
+                            <li>
+                                <p><b>Vérifie des hypothèses</b></p>
+                            </li>
+                            <li>
+                                <p>Décèle des exceptions</p>
+                            </li>
+                            <li>
+                                <p><b>Améliore l'efficacité</b> de vos processus et votre productivité</p>
+                            </li>
+                        </ul>
+                        <img src="assets/animations/product_5.gif" alt="animation" class="product-animation">
+                        <a href="#" class="btn">en savoir +</a>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next swiper-button-white"></div>
-            <div class="swiper-button-prev swiper-button-white"></div>
-        </div>
-    </section>
-    <div class="waves reverse"></div>
-
-    <section id="products">
-        <div class="slider-container">
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="assets/img/notes_de_frais.svg" alt="logo Notes de frais" class="product-logo">
-                    <ul>
-                        <li>
-                            <p>Système <b>OCR performant</b></p>
-                        </li>
-                        <li>
-                            <p>Équipes et infrastructure <b>100% made in France</b></p>
-                        </li>
-                        <li>
-                            <p><b>Valideur intelligent</b> qui arbitre les frais</p>
-                        </li>
-                        <li>
-                            <p><b>Interface sur-mesure</b> avec vos outils de comptabilité</p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_1.gif" alt="Notes de frais">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="assets/img/interfaces.svg" alt="logo Interfaces" class="product-logo">
-                    <ul>
-                        <li>
-                            <p>Conception d'interfaces <b>sur-mesure</b></p>
-                        </li>
-                        <li>
-                            <p>Édition de <b>logiciels SAAS</b></p>
-                        </li>
-                        <li>
-                            <p>Conception de <b>logiciel sur-mesure</b></p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_2.gif" alt="Interfaces">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="assets/img/interfaces.svg" alt="logo Interfaces" class="product-logo">
-                    <ul>
-                        <li>
-                            <p>Nous créons votre logo qui représentera parfaitement les <b>valeurs de votre société</b>
-                            </p>
-                        </li>
-                        <li>
-                            <p>Stratégies de <b>communication intelligentes et audacieuses</b></p>
-                        </li>
-                        <li>
-                            <p><b>Transparence et planification</b> de toutes les étapes de conception</p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_3.gif" alt="Communication">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="assets/img/management.svg" alt="logo Management" class="product-logo">
-                    <ul>
-                        <li>
-                            <p><b>Moteur intelligent</b> calculant tous les scénarios possibles pour suggèrer les
-                                <b>meilleures combinaisons de tâches</b>
-                            </p>
-                        </li>
-                        <li>
-                            <p>Estime la charge de travail de vos projets</p>
-                        </li>
-                        <li>
-                            <p>Détermine le meilleur acteur pour chaque tâche</p>
-                        </li>
-                        <li>
-                            <p><b>Limite les coûts</b> et annonce au client une deadline réaliste</p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_4.gif" alt="Management">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="assets/img/audit_expert.svg" alt="logo Audit expert" class="product-logo">
-                    <ul>
-                        <li>
-                            <p>Rapports précis et <b>approche scientifique</b></p>
-                        </li>
-                        <li>
-                            <p><b>Vérifie des hypothèses</b></p>
-                        </li>
-                        <li>
-                            <p>Décèle des exceptions</p>
-                        </li>
-                        <li>
-                            <p><b>Améliore l'efficacité</b> de vos processus et votre productivité</p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_5.gif" alt="Audit expert">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-        </div>
-        <h1>Découvrez nos solutions pour activer le processus d'excellence</h1>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-content">
-                    <img src="assets/img/notes_de_frais.svg" alt="logo Notes de frais" class="product-logo">
-                    <ul>
-                        <li>
-                            <p>Système <b>OCR performant</b></p>
-                        </li>
-                        <li>
-                            <p>Équipes et infrastructure <b>100% made in France</b></p>
-                        </li>
-                        <li>
-                            <p><b>Valideur intelligent</b> qui arbitre les frais</p>
-                        </li>
-                        <li>
-                            <p><b>Interface sur-mesure</b> avec vos outils de comptabilité</p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_1.gif" alt="Notes de frais">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="assets/img/interfaces.svg" alt="logo Interfaces" class="product-logo">
-                    <ul>
-                        <li>
-                            <p>Conception d'interfaces <b>sur-mesure</b></p>
-                        </li>
-                        <li>
-                            <p>Édition de <b>logiciels SAAS</b></p>
-                        </li>
-                        <li>
-                            <p>Conception de <b>logiciel sur-mesure</b></p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_2.gif" alt="Interfaces">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="assets/img/interfaces.svg" alt="logo Interfaces" class="product-logo">
-                    <ul>
-                        <li>
-                            <p>Nous créons votre logo qui représentera parfaitement les <b>valeurs de votre société</b>
-                            </p>
-                        </li>
-                        <li>
-                            <p>Stratégies de <b>communication intelligentes et audacieuses</b></p>
-                        </li>
-                        <li>
-                            <p><b>Transparence et planification</b> de toutes les étapes de conception</p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_3.gif" alt="Communication">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="assets/img/management.svg" alt="logo Management" class="product-logo">
-                    <ul>
-                        <li>
-                            <p><b>Moteur intelligent</b> calculant tous les scénarios possibles pour suggèrer les
-                                <b>meilleures combinaisons de tâches</b>
-                            </p>
-                        </li>
-                        <li>
-                            <p>Estime la charge de travail de vos projets</p>
-                        </li>
-                        <li>
-                            <p>Détermine le meilleur acteur pour chaque tâche</p>
-                        </li>
-                        <li>
-                            <p><b>Limite les coûts</b> et annonce au client une deadline réaliste</p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_4.gif" alt="Management">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="assets/img/audit_expert.svg" alt="logo Audit expert" class="product-logo">
-                    <ul>
-                        <li>
-                            <p>Rapports précis et <b>approche scientifique</b></p>
-                        </li>
-                        <li>
-                            <p><b>Vérifie des hypothèses</b></p>
-                        </li>
-                        <li>
-                            <p>Décèle des exceptions</p>
-                        </li>
-                        <li>
-                            <p><b>Améliore l'efficacité</b> de vos processus et votre productivité</p>
-                        </li>
-                    </ul>
-                    <img src="assets/animations/product_5.gif" alt="Audit expert">
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
-    <div class="dots">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
 
     <div class="waves"></div>
-    <section id="refs" class="primary">
-        <h1>+ 900 clients nous font confiance</h1>
-        <h1>+ 1500 projets réalisés</h1>
-        <h1>14 ans d'expérience</h1>
-        <div class="logo-container">
-            <img src="assets/img/1-logo_allianz.svg" alt="allianz">
-            <img src="assets/img/2-logo_bandai-namco.svg" alt="bandai namco">
-            <img src="assets/img/3-logo_bp.svg" alt="bp">
-            <img src="assets/img/4-logo_honda.svg" alt="honda">
-            <img src="assets/img/5-logo_deutsche-bank.svg" alt="deutsche bank">
-            <img src="assets/img/6-logo_disney-store.svg" alt="disney store">
-            <img src="assets/img/7-logo_banque-postale.svg" alt="banque postale">
-            <img src="assets/img/8-logo_ea.svg" alt="ea">
-            <img src="assets/img/9-logo_guess.svg" alt="guess">
-            <img src="assets/img/10-logo_ikea.svg" alt="ikea">
+
+    <section class="primary" id="refs">
+        <div class="section-title">
+            <h1>+ 900 clients nous font confiance</h1>
+            <h1>+ 1500 projets réalisés</h1>
+            <h1>14 ans d'expérience</h1>
         </div>
-        <a href="#" class="btn">devenons partenaires</a>
+        <div class="section-content">
+            <img src="assets/img/1-logo_allianz.svg" alt="allianz" class="partner-logo">
+            <img src="assets/img/2-logo_bandai-namco.svg" alt="bandai namco" class="partner-logo">
+            <img src="assets/img/3-logo_bp.svg" alt="bp" class="partner-logo">
+            <img src="assets/img/4-logo_honda.svg" alt="honda" class="partner-logo">
+            <img src="assets/img/5-logo_deutsche-bank.svg" alt="deutsche bank" class="partner-logo">
+            <img src="assets/img/6-logo_disney-store.svg" alt="disney store" class="partner-logo">
+            <img src="assets/img/7-logo_banque-postale.svg" alt="banque postale" class="partner-logo">
+            <img src="assets/img/8-logo_ea.svg" alt="ea" class="partner-logo">
+            <img src="assets/img/9-logo_guess.svg" alt="guess" class="partner-logo">
+            <img src="assets/img/10-logo_ikea.svg" alt="ikea" class="partner-logo">
+        </div>
+        <div class="centered">
+            <a href="#" class="btn">devenons partenaires</a>
+        </div>
     </section>
     <div class="waves reverse"></div>
 
-    <section class="add-margin" id="why">
-        <div class="swiper carousel">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide card purple">
-                    <div class="text">
-                        <h2>Parce que l'écoute</h2>
-                        <p>et la compréhension des besoins sont à nos yeux les véritables garants de la réussite des
-                            projets
-                        </p>
-                    </div>
-                    <img src="assets/animations/card_1.gif" alt="Ecoute">
-                </div>
-                <div class="swiper-slide card darkblue">
-                    <div class="text">
-                        <h2>Parce que la relation humaine</h2>
-                        <p>est au coeur de tous nos process et que, comme vous, nous aimons être compris et détestons
-                            nous
-                            adresser à des robots</p>
-                    </div>
-                    <img src="assets/animations/card_2.gif" alt="Relation humaine">
-                </div>
-                <div class="swiper-slide card blue">
-                    <div class="text">
-                        <h2>Parce que la France</h2>
-                        <p>déborde d'incroyables talents, nos équipes et notre infrastructure sont 100% made in France
-                        </p>
-                    </div>
-                    <img src="assets/animations/card_3.gif" alt="France">
-                </div>
-            </div>
-        </div>
-        <div class="card-container">
+    <section class="web">
+        <div class="section-content">
             <div class="card purple">
                 <div class="text">
                     <h2>Parce que l'écoute</h2>
@@ -405,65 +393,57 @@
         </div>
     </section>
 
-    <section class="contact mobile" id="contact">
-        <h1>Vous êtes prêts à activer le processus d'excellence ?</h1>
-        <img src="assets/animations/formulaire.gif" alt="contact">
-        <h1>Contactez-nous</h1>
-        <form action="#">
-            <div class="form-item">
-                <input type="text" name="first-name" placeholder="Prénom" class="col-50">
-                <input type="text" name="last-name" placeholder="Nom" class="col-50">
+    <section class="mobile centered">
+        <div class="swiper cards">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card purple">
+                    <div class="text">
+                        <h2>Parce que l'écoute</h2>
+                        <p>et la compréhension des besoins sont à nos yeux les véritables garants de la réussite des
+                            projets
+                        </p>
+                    </div>
+                    <img src="assets/animations/card_1.gif" alt="Ecoute">
+                </div>
+                <div class="swiper-slide card darkblue">
+                    <div class="text">
+                        <h2>Parce que la relation humaine</h2>
+                        <p>est au coeur de tous nos process et que, comme vous, nous aimons être compris et détestons
+                            nous
+                            adresser à des robots</p>
+                    </div>
+                    <img src="assets/animations/card_2.gif" alt="Relation humaine">
+                </div>
+                <div class="swiper-slide card blue">
+                    <div class="text">
+                        <h2>Parce que la France</h2>
+                        <p>déborde d'incroyables talents, nos équipes et notre infrastructure sont 100% made in France
+                        </p>
+                    </div>
+                    <img src="assets/animations/card_3.gif" alt="France">
+                </div>
             </div>
-            <div class="form-item">
-                <input type="email" name="email" placeholder="E-mail">
-            </div>
-            <div class="form-item">
-                <input type="text" name="email" placeholder="Société" class="col-50">
-                <input type="tel" name="email" placeholder="Téléphone" class="col-50">
-            </div>
-            <div class="form-item">
-                <input type="text" name="message" placeholder="Message">
-            </div>
-            <div class="form-item">
-                <input type="submit" class="btn" value="envoyer">
-            </div>
-        </form>
-    </section>
-    <section class="infos mobile">
-        <img src="assets/img/dpi.svg" alt="logo dpi">
-        <p>Dammann Prestations Informatiques</p>
-        <p>30 rue du Puech, ZA La Montée Rouge</p>
-        <p>30310 VERGÈZE</p>
-        <p>04 66 80 00 66</p>
-        <div class="footer">
-            <ul>
-                <li><a href="#">Sécurité des données</a></li>
-                <li><a href="#">CGV</a></li>
-                <li><a href="#">Mentions légales</a></li>
-            </ul>
-            <p>Dammann Prestations Informatiques - Tous droits réservés - SASU au capital de 100 000€ - RCS Nîmes SIREN
-                750 857 054 NAF 6202A TVA Intracom FR23 750 857 054</p>
         </div>
     </section>
 
     <div class="waves grey"></div>
-    <section class="contact">
-        <div class="title">
-            <h1>Vous êtes prêts à activer le processus d'excellence ?</h1>
+    <section class="grey web">
+        <div class="section-title">
+            <h1>Vous êtes prêt à activer le processus d'excellence ?</h1>
         </div>
-        <div class="content">
-            <div class="infos">
-                <div class="inline-container">
-                    <img src="assets/img/dpi.svg" alt="logo dpi">
-                    <img src="assets/animations/formulaire.gif" alt="">
+        <div class="section-content">
+            <div class="contact-infos">
+                <div>
+                    <img src="assets/img/dpi.svg" alt="DPI">
+                    <img src="assets/animations/formulaire.gif" alt="animation">
                 </div>
                 <h2>Contactez-nous</h2>
                 <p>Dammann Prestations Informatiques</p>
-                <p>30 rue du Puech, ZA La Montée Rouge</p>
+                <p>30, rue du Puech, ZA La Montée Rouge</p>
                 <p>30310 VERGÈZE</p>
                 <p>04 66 80 00 66</p>
             </div>
-            <form action="#">
+            <form action="" class="contact-form">
                 <div class="form-item">
                     <input type="text" name="first-name" placeholder="Prénom" class="col-50">
                     <input type="text" name="last-name" placeholder="Nom" class="col-50">
@@ -476,7 +456,7 @@
                     <input type="tel" name="email" placeholder="Téléphone" class="col-50">
                 </div>
                 <div class="form-item">
-                    <input type="text" name="message" placeholder="Message">
+                    <textarea type="text" name="message" placeholder="Message" rows="5"></textarea>
                 </div>
                 <div class="form-item">
                     <input type="submit" class="btn" value="envoyer">
@@ -485,23 +465,20 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <footer>
+        <div class="centered">
+            <a href="#">Sécurité des données</a>
+            <a href="#">CGV</a>
+            <a href="#">Mentions légales</a>
+        </div>
+        <div class="centered">
+            <p>Dammann Prestations Informatiques - Tous droits réservés - SAS au capital de 100 000 - RCS Nîmes • SIREN
+                750 857 054 • NAF 6202A • TVA Intracom FR23 750 857 054</p>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".carousel", {
-            effect: "cards",
-            grabCursor: true,
-        });
-        // var swiper = new Swiper(".header-slider", {
-        //     navigation: {
-        //         nextEl: ".swiper-button-next",
-        //         prevEl: ".swiper-button-prev",
-        //     },
-        //     autoplay: {
-        //         delay: 5000,
-        //     },
-        // });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

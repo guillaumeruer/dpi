@@ -116,6 +116,7 @@ nav ul li a {
 }
 
 .nav-ul.show {
+    display: block;
     left: 0;
 }
 
@@ -153,6 +154,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2rem 0;
+    height: 35rem;
 }
 .slide-content .infos {
     display: flex;
@@ -172,6 +174,16 @@ nav ul li a {
 
 .slide-content .infos .btn {
     margin-top: auto;
+}
+
+.slide-content .animation {
+    width: 100%;
+}
+
+.slide-content .animation img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
 }
 
 .logos {
@@ -229,6 +241,15 @@ nav ul li a {
     max-height: 35%;
 }
 
+/* responsive */
+.mobile {
+    display: none;
+}
+
+#refs {
+    overflow-y: hidden;
+}
+
 @media screen and (max-width: 1920px) {
     .product-card {
         min-width: 12rem;
@@ -243,20 +264,31 @@ nav ul li a {
     }
 
     .section-content {
-        padding: 1rem 2rem 4rem;
+        padding: 1rem 2rem 1rem;
     }
 
     .slide-content .infos {
-        padding: 5rem 2rem 0rem 8rem;
+        padding: 5rem 2rem 0rem 5rem;
     }
 
+    .slide-content .infos h1 {
+        padding: 2rem 0 1rem 0;
+    }
+
+    .slide-content .infos .btn {
+        margin-top: 1rem;
+    }
     .slide-content .animation img {
-        padding-top: 6rem;
+        padding-top: 4rem;
         height: 80%;
     }
 
     .logos {
         left: 10rem;
+    }
+
+    .slide-content {
+        height: 30rem;
     }
 }
 
@@ -273,6 +305,10 @@ nav ul li a {
         display: none;
     }
 
+    .mobile {
+        display: flex;
+    }
+
     .section-content {
         flex-wrap: wrap;
     }
@@ -280,6 +316,7 @@ nav ul li a {
     .nav-ul {
         position: absolute;
         left: 100%;
+        display: none;
         top: 44px;
         flex-direction: column;
         width: 100%;
@@ -304,6 +341,7 @@ nav ul li a {
 
     .cards {
         max-width: 80%;
+        height: 24rem;
     }
 }
 
