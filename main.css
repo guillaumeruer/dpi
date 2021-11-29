@@ -12,6 +12,11 @@
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -116,7 +121,7 @@ nav ul li a {
 }
 
 .nav-ul.show {
-    display: block;
+    display: flex;
     left: 0;
 }
 
@@ -250,6 +255,10 @@ nav ul li a {
     overflow-y: hidden;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 @media screen and (max-width: 1920px) {
     .product-card {
         min-width: 12rem;
@@ -299,6 +308,7 @@ nav ul li a {
 
     section {
         height: 100vh;
+        scroll-snap-align: start;
     }
 
     .web {
@@ -307,6 +317,10 @@ nav ul li a {
 
     .mobile {
         display: flex;
+    }
+
+    .mobile-nav {
+        display: block;
     }
 
     .section-content {
@@ -342,6 +356,18 @@ nav ul li a {
     .cards {
         max-width: 80%;
         height: 24rem;
+    }
+
+    .mobile h2 {
+        padding: 1rem 0;
+    }
+
+    .mobile .contact-form {
+        width: 100%;
+    }
+
+    .centered {
+        text-align: center;
     }
 }
 

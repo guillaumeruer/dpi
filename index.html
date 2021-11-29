@@ -18,10 +18,13 @@
                 <div class="bottom"></div>
             </button>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="#products">Nos solutions</a></li>
+                <li class="web"><a href="#products">Nos solutions</a></li>
+                <li class="mobile-nav"><a href="#products2">Nos solutions</a></li>
                 <li><a href="#refs">Nos références</a></li>
-                <li><a href="#why">Pourquoi nous ?</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="web"><a href="#why">Pourquoi nous ?</a></li>
+                <li class="mobile-nav"><a href="#why2">Pourquoi nous ?</a></li>
+                <li class="web"><a href="#contact">Contact</a></li>
+                <li class="mobile-nav"><a href="#contact2">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -125,7 +128,7 @@
         </div>
     </section>
 
-    <div class="waves reverse"></div>
+    <div class="waves reverse" id="products"></div>
     <section class="web">
         <div class="section-title">
             <h1>Découvrez nos solutions pour activer le processus d'excellence</h1>
@@ -226,7 +229,7 @@
         </div>
     </section>
 
-    <section class="mobile" id="products">
+    <section class="mobile" id="products2">
         <div class="swiper product-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -362,7 +365,7 @@
     </section>
     <div class="waves reverse"></div>
 
-    <section class="web">
+    <section class="web" id="why">
         <div class="section-content">
             <div class="card purple">
                 <div class="text">
@@ -393,7 +396,7 @@
         </div>
     </section>
 
-    <section class="mobile centered">
+    <section class="mobile centered" id="why2">
         <div class="swiper cards">
             <div class="swiper-wrapper">
                 <div class="swiper-slide card purple">
@@ -427,7 +430,7 @@
     </section>
 
     <div class="waves grey"></div>
-    <section class="grey web">
+    <section class="grey web" id="contact">
         <div class="section-title">
             <h1>Vous êtes prêt à activer le processus d'excellence ?</h1>
         </div>
@@ -463,6 +466,30 @@
                 </div>
             </form>
         </div>
+    </section>
+
+    <section class="grey mobile columns" id="contact2">
+        <img src="assets/animations/formulaire.gif" alt="animation">
+        <h2>Contactez-nous</h2>
+        <form action="" class="contact-form">
+            <div class="form-item">
+                <input type="text" name="first-name" placeholder="Prénom" class="col-50">
+                <input type="text" name="last-name" placeholder="Nom" class="col-50">
+            </div>
+            <div class="form-item">
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="form-item">
+                <input type="text" name="email" placeholder="Société" class="col-50">
+                <input type="tel" name="email" placeholder="Téléphone" class="col-50">
+            </div>
+            <div class="form-item">
+                <textarea type="text" name="message" placeholder="Message" rows="5"></textarea>
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="envoyer">
+            </div>
+        </form>
     </section>
 
     <footer>
