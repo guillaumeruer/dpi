@@ -465,7 +465,7 @@ footer a {
     width: 100%;
     /*height from the svg file*/
     height: 140px;
-    background: url("assets/img/wave.svg");
+    background: url("/assets/img/wave.svg");
 }
 
 .waves.reverse {
@@ -476,7 +476,7 @@ footer a {
     content:'';
     width: 100%;
     height: 140px;
-    background: url("assets/img/wave.svg");
+    background: url("/assets/img/wave.svg");
     position: absolute;
     top: 0;
     left: 0;
@@ -488,7 +488,7 @@ footer a {
     content:'';
     width: 100%;
     height: 140px;
-    background: url("assets/img/wave.svg");
+    background: url("/assets/img/wave.svg");
     position: absolute;
     top: 0;
     left: 0;
@@ -498,7 +498,23 @@ footer a {
 }
 
 .waves.grey, .waves.grey::before, .waves.grey::after {
-    background: url("assets/img/wave_grey.svg");
+    background: url("/assets/img/wave_grey.svg");
+}
+
+.waves.interfaces, .waves.interfaces::before, .waves.interfaces::after {
+    background: url("/assets/img/wave_interface.svg");
+}
+
+.waves.communication, .waves.communication::before, .waves.communication::after {
+    background: url("/assets/img/wave_communication.svg");
+}
+
+.waves.management, .waves.management::before, .waves.management::after {
+    background: url("/assets/img/wave_management.svg");
+}
+
+.waves.audit, .waves.audit::before, .waves.audit::after {
+    background: url("/assets/img/wave_audit.svg");
 }
 
 @keyframes waves {
@@ -518,4 +534,14 @@ footer a {
     100% {
         background-position: 0;
     }
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content img {
+    width: 45%;
 }
